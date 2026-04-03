@@ -1,92 +1,95 @@
-# 👋 Hi, I'm Suraj Patidar (SP)
+# 👋 Suraj Patidar (SP)
 
-🚀 Senior Python Backend Architect | SaaS Builder | System Design Enthusiast  
+🚀 Python Backend Architect • SaaS Systems Builder • API Design Specialist  
+
+> Building scalable, production-grade backend systems that solve real business problems.
 
 ---
 
-## 🧠 About Me
+## 🔍 Who I Am
 
-I am a Senior Python Developer with 15+ years of experience designing, building, and scaling production-grade backend systems.
+I design and build **high-performance backend systems** using Python.
 
-I specialize in:
+Focused on:
+- Scalable SaaS platforms
+- Clean system architecture
+- Production-ready APIs
+- Business-driven engineering
 
-- 🐍 Python (Advanced)
-- 🌐 Django & Django REST Framework
-- ⚡ FastAPI
-- 💳 Stripe Integrations (Billing, Subscriptions, Webhooks)
-- 🐳 Docker & AWS Deployments
-- 🏗 Scalable SaaS Architecture
+---
+
+## ⚡ Core Expertise
+
+- 🐍 Python (Advanced Backend Engineering)
+- 🌐 Django • Django REST Framework
+- ⚡ FastAPI (High-performance APIs)
+- 💳 Stripe Billing & Subscription Systems
+- 🐳 Dockerized Deployments
+- ☁️ AWS Infrastructure
+- 🧠 System Design & Architecture
 - 🔐 Security & Performance Optimization
-- 🧩 Clean Architecture & Maintainable Code
-
-I focus on building systems that are:
-- Scalable
-- Secure
-- Maintainable
-- Developer-friendly
-- Business-ready
 
 ---
 
-## 🚀 What I Build
+## 🏗 What I Build
 
-- Multi-tenant SaaS platforms
-- Subscription-based systems
-- Stripe-powered billing engines
-- Enterprise REST APIs
-- Automation & workflow systems
-- Production-grade backend architectures
-
----
-
-## 🛠 Tech Stack
-
-**Backend**
-- Python
-- Django
-- Django REST Framework
-- FastAPI
-
-**Infrastructure**
-- Docker
-- AWS
-- PostgreSQL
-- Redis
-
-**Payments & SaaS**
-- Stripe Billing
-- Webhook systems
-- Subscription lifecycle management
-
-**Other**
-- System Design
-- API Architecture
-- Performance Optimization
-- Clean Code Practices
+- Multi-tenant SaaS platforms  
+- ERP-like business systems  
+- Subscription & billing engines  
+- High-scale REST APIs  
+- Automation & workflow systems  
+- Backend systems designed for scale  
 
 ---
 
-## 📈 Current Focus
+## 🧩 Engineering Principles
 
-- Building scalable SaaS systems
-- Advanced system architecture patterns
-- Developer-focused tools
-- High-performance backend engineering
-
----
-
-## 🧩 Philosophy
-
-> Write code like it will be maintained for 10+ years.  
-> Design systems like they will serve 1 million users.  
+- Design for scale from day one  
+- Keep systems simple, not simplistic  
+- Optimize for maintainability  
+- Prioritize real-world usability over theory  
+- Build with business impact in mind  
 
 ---
 
-## 📫 Connect With Me
+## ⚙️ Tech Stack
+
+**Backend:**  
+Python • Django • DRF • FastAPI  
+
+**Infrastructure:**  
+Docker • AWS • PostgreSQL • Redis  
+
+**Payments:**  
+Stripe • Webhooks • Subscription lifecycle  
+
+---
+
+## 🚧 Current Focus
+
+- SaaS architecture patterns  
+- Backend performance optimization  
+- Developer-first system design  
+- Scalable API ecosystems  
+
+---
+
+## 🌐 Keywords (for search & discoverability)
+
+Python Developer • Django Developer • FastAPI Developer • Backend Engineer • SaaS Developer • API Developer • System Design • Scalable Architecture • Stripe Integration • AWS Backend • Dockerized Apps
+
+---
+
+## 📫 Connect
 
 📧 suraj.pysquad@gmail.com  
-💼 Open to collaboration on scalable backend systems  
 
 ---
 
-⭐ If you like clean architecture, scalable SaaS, and serious backend engineering — let's build something powerful.
+## 🧠 Builder Mindset
+
+> Systems should be easy to use, hard to break, and built to scale.
+
+---
+
+⭐ Follow for backend architecture, SaaS engineering, and real-world system design.
