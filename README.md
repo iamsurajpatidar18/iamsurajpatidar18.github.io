@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Suraj (SP)
+# 👋 Hi, I'm Suraj Patidar (SP)
 
 🚀 Senior Python Backend Architect | SaaS Builder | System Design Enthusiast  
 
