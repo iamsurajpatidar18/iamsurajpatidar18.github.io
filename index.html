@@ -3,24 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suraj Patidar | Python Developer | Django Developer | SaaS Backend Architect</title>
-  <meta name="description" content="Suraj Patidar is a Python Backend Architect specializing in Django, FastAPI, SaaS systems, API development, and Stripe integrations. Hire for scalable backend systems."/>
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Suraj Patidar | Backend Architect"/>
-  <meta property="og:description" content="Building scalable SaaS platforms, APIs, and backend systems with Python, Django, and FastAPI."/>
-  <meta property="og:type" content="website"/>
+  <title>Suraj Patidar | Python Backend Architect | SaaS Developer</title>
+  <meta name="description" content="Suraj Patidar - Python Backend Architect specializing in Django, FastAPI, SaaS systems, scalable APIs, and Stripe integrations."/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #0b0f17;
-      --card: rgba(255,255,255,0.05);
-      --text: #e6eaf2;
-      --muted: #9aa4b2;
-      --accent: linear-gradient(135deg, #4f46e5, #9333ea);
-      --border: rgba(255,255,255,0.08);
+      --bg: #0a0d14;
+      --card: rgba(255,255,255,0.04);
+      --text: #e8ecf3;
+      --muted: #8b95a7;
+      --accent: #6366f1;
+      --border: rgba(255,255,255,0.06);
     }
 
     * {
@@ -33,133 +28,106 @@
     body {
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
     }
 
     .container {
       max-width: 1100px;
       margin: auto;
-      padding: 80px 20px;
+      padding: 40px 20px;
     }
 
-    h1, h2, h3 {
-      line-height: 1.2;
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    h3 { font-size: 1.1rem; margin-bottom: 6px; }
+
+    p {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
-    h1 {
-      font-size: 3rem;
-      background: var(--accent);
+    .hero {
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      background: linear-gradient(135deg, #6366f1, #9333ea);
       -webkit-background-clip: text;
       color: transparent;
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      color: var(--muted);
+    .hero p {
+      max-width: 520px;
+      margin: 10px auto 18px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 10px 16px;
+      border-radius: 6px;
       background: var(--accent);
       color: #fff;
       text-decoration: none;
-      font-weight: 500;
-      margin-right: 10px;
-      transition: 0.3s;
+      font-size: 0.9rem;
+      margin: 4px;
+      display: inline-block;
     }
 
-    .btn:hover {
-      opacity: 0.85;
-    }
-
-    .hero {
-      text-align: center;
-      padding-top: 120px;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    .trust {
+    .strip {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 40px;
+      margin-top: 18px;
     }
 
-    .badge {
-      padding: 10px 16px;
+    .tag {
+      font-size: 0.8rem;
+      padding: 6px 10px;
       border: 1px solid var(--border);
-      border-radius: 999px;
-      font-size: 0.9rem;
+      border-radius: 20px;
       color: var(--muted);
+    }
+
+    .section {
+      margin-top: 30px;
     }
 
     .grid {
       display: grid;
-      gap: 20px;
+      gap: 12px;
     }
 
     .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      padding: 20px;
-      border-radius: 12px;
-      backdrop-filter: blur(10px);
-      transition: 0.3s;
+      padding: 14px;
+      border-radius: 10px;
+      transition: 0.2s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      border-color: #4f46e5;
+      border-color: var(--accent);
     }
 
-    .tags span {
+    .skills span {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      margin: 3px;
       display: inline-block;
-      margin: 5px;
-      padding: 6px 10px;
+      background: rgba(255,255,255,0.05);
       border-radius: 6px;
-      background: rgba(255,255,255,0.06);
-      font-size: 0.8rem;
-    }
-
-    .section {
-      margin-top: 80px;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: #fff;
     }
 
     footer {
-      text-align: center;
-      padding: 40px 20px;
+      margin-top: 40px;
+      padding-top: 20px;
       border-top: 1px solid var(--border);
-      margin-top: 80px;
-      font-size: 0.9rem;
+      text-align: center;
+      font-size: 0.8rem;
       color: var(--muted);
     }
   </style>
@@ -169,20 +137,20 @@
 
   <!-- HERO -->
   <section class="hero container">
-    <h1>Building Scalable Backend Systems & SaaS Platforms</h1>
+    <h1>Scalable Backend Systems & SaaS Architecture</h1>
     <p>
-      I design and engineer high-performance backend systems using Python, Django, and FastAPI — helping businesses scale with reliable APIs, SaaS architecture, and seamless payment systems.
+      I build high-performance backend systems with Python, Django, and FastAPI — focused on real-world scalability, clean architecture, and reliable APIs.
     </p>
     <div>
-      <a href="#contact" class="btn">Hire Me</a>
+      <a href="mailto:your@email.com" class="btn">Hire Me</a>
       <a href="#projects" class="btn">View Work</a>
     </div>
 
-    <div class="trust">
-      <div class="badge">SaaS Systems</div>
-      <div class="badge">API Architecture</div>
-      <div class="badge">Stripe Billing</div>
-      <div class="badge">Scalable Systems</div>
+    <div class="strip">
+      <div class="tag">SaaS Systems</div>
+      <div class="tag">API Architecture</div>
+      <div class="tag">Stripe Billing</div>
+      <div class="tag">Scalable Systems</div>
     </div>
   </section>
 
@@ -190,68 +158,52 @@
   <section class="container section">
     <h2>About</h2>
     <p>
-      I'm Suraj Patidar, a backend-focused engineer who specializes in building scalable SaaS platforms and high-performance APIs. I focus on solving real-world business problems through clean architecture, efficient data handling, and reliable backend systems.  
-      <br><br>
-      With strong experience in Django, FastAPI, and Stripe integrations, I’ve worked on systems that handle complex workflows, real-time data, and scalable infrastructure.
+      Backend engineer focused on building scalable SaaS systems and APIs. Strong experience in Django, FastAPI, and Stripe integrations with production-grade architecture and performance optimization.
     </p>
   </section>
 
   <!-- SKILLS -->
   <section class="container section">
-    <h2>Skills</h2>
+    <h2>Core Stack</h2>
     <div class="grid grid-3">
-      <div class="card">
+      <div class="card skills">
         <h3>Backend</h3>
-        <div class="tags">
-          <span>Python</span><span>Django</span><span>FastAPI</span><span>Flask</span>
-        </div>
+        <span>Python</span><span>Django</span><span>FastAPI</span><span>Flask</span>
       </div>
-      <div class="card">
-        <h3>DevOps</h3>
-        <div class="tags">
-          <span>AWS</span><span>Docker</span><span>Redis</span><span>Celery</span>
-        </div>
+      <div class="card skills">
+        <h3>Infra</h3>
+        <span>AWS</span><span>Docker</span><span>Redis</span><span>Celery</span>
       </div>
-      <div class="card">
+      <div class="card skills">
         <h3>Payments</h3>
-        <div class="tags">
-          <span>Stripe</span><span>Billing Systems</span>
-        </div>
+        <span>Stripe</span><span>Billing</span>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="container section">
-    <h2>Projects</h2>
+    <h2>Selected Work</h2>
     <div class="grid grid-3">
 
       <div class="card">
         <h3>Marinapy</h3>
-        <p><strong>Problem:</strong> Managing marina operations at scale.</p>
-        <p><strong>Solution:</strong> Built scalable SaaS backend with role-based APIs.</p>
-        <p><strong>Tech:</strong> Django, DRF, PostgreSQL</p>
+        <p>Multi-portal SaaS backend for marina operations with scalable APIs and role-based workflows.</p>
       </div>
 
       <div class="card">
         <h3>Upstrm</h3>
-        <p><strong>Problem:</strong> Payment and digital asset backend.</p>
-        <p><strong>Solution:</strong> Stripe-powered backend system.</p>
-        <p><strong>Tech:</strong> Flask, Stripe</p>
+        <p>Stripe-integrated backend for digital transactions and payment workflows.</p>
       </div>
 
       <div class="card">
         <h3>Sharelyze</h3>
-        <p><strong>Problem:</strong> File analytics tracking.</p>
-        <p><strong>Solution:</strong> Built API for tracking engagement.</p>
-        <p><strong>Tech:</strong> Django, DRF</p>
+        <p>File analytics backend with tracking APIs for engagement insights.</p>
       </div>
 
       <div class="card">
         <h3>Feltiv</h3>
-        <p><strong>Problem:</strong> Media processing workflows.</p>
-        <p><strong>Solution:</strong> Backend for voice automation and subtitles.</p>
-        <p><strong>Tech:</strong> Django</p>
+        <p>Media backend system for voice automation and subtitle processing.</p>
       </div>
 
     </div>
@@ -259,51 +211,25 @@
 
   <!-- SERVICES -->
   <section class="container section">
-    <h2>Services</h2>
+    <h2>What I Do</h2>
     <div class="grid grid-3">
-      <div class="card">
-        <h3>SaaS Development</h3>
-        <p>Build scalable, production-ready SaaS platforms from scratch.</p>
-      </div>
-      <div class="card">
-        <h3>API Engineering</h3>
-        <p>Design fast, secure, and reliable APIs for real-world systems.</p>
-      </div>
-      <div class="card">
-        <h3>Stripe Integration</h3>
-        <p>Implement robust billing systems and payment workflows.</p>
-      </div>
-      <div class="card">
-        <h3>System Architecture</h3>
-        <p>Design scalable backend systems optimized for performance.</p>
-      </div>
+      <div class="card"><h3>SaaS Development</h3></div>
+      <div class="card"><h3>API Engineering</h3></div>
+      <div class="card"><h3>Stripe Integration</h3></div>
+      <div class="card"><h3>System Design</h3></div>
     </div>
   </section>
 
-  <!-- EXPERTISE -->
-  <section class="container section">
-    <h2>System Thinking</h2>
-    <p>
-      I focus on building systems that scale — from database design to API performance and background processing. My approach ensures long-term maintainability, high performance, and real-world reliability.
-    </p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="container section contact">
-    <h2>Let’s build something scalable together</h2>
-    <p>Have a project or idea? Let’s discuss.</p>
-
-    <form>
-      <input type="text" placeholder="Your Name"/>
-      <input type="email" placeholder="Your Email"/>
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button class="btn" type="submit">Send Message</button>
-    </form>
+  <!-- CONTACT CTA -->
+  <section class="container section" style="text-align:center;">
+    <h2>Let’s build something scalable</h2>
+    <p style="margin-bottom:10px;">Direct collaboration. No noise.</p>
+    <a href="mailto:your@email.com" class="btn">Contact Me</a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    © 2026 Suraj Patidar | Python Developer | Django Developer | SaaS Backend Architect
+    Suraj Patidar · Python Developer · Django Developer · SaaS Backend Architect
   </footer>
 
 </body>
