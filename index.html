@@ -1,236 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suraj Patidar | Python Backend Architect | SaaS Developer</title>
-  <meta name="description" content="Suraj Patidar - Python Backend Architect specializing in Django, FastAPI, SaaS systems, scalable APIs, and Stripe integrations."/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Suraj Patidar | Python Developer | Django Developer | SaaS Backend Architect</title>
+<meta name="description" content="Suraj Patidar is a Python Backend Architect specializing in Django, FastAPI, SaaS systems, API development, and Stripe billing integrations.">
 
-  <style>
-    :root {
-      --bg: #0a0d14;
-      --card: rgba(255,255,255,0.04);
-      --text: #e8ecf3;
-      --muted: #8b95a7;
-      --accent: #6366f1;
-      --border: rgba(255,255,255,0.06);
-    }
+<meta property="og:title" content="Suraj Patidar | Backend Architect">
+<meta property="og:description" content="Scalable SaaS systems, APIs, and backend architecture using Python, Django, and FastAPI.">
+<meta property="og:type" content="website">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-    }
+<style>
+:root{
+  --bg:#07090f;
+  --card:rgba(255,255,255,0.04);
+  --border:rgba(255,255,255,0.06);
+  --text:#e6eaf2;
+  --muted:#8b95a7;
+  --accent:#6366f1;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
 
-    h1 { font-size: 2.6rem; }
-    h2 { font-size: 1.6rem; margin-bottom: 10px; }
-    h3 { font-size: 1.1rem; margin-bottom: 6px; }
+body{background:var(--bg);color:var(--text);}
 
-    p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+.container{max-width:1100px;margin:auto;padding:60px 20px;}
 
-    .hero {
-      padding-top: 80px;
-      text-align: center;
-    }
+h1{font-size:2.8rem;line-height:1.2;}
+h2{font-size:1.6rem;margin-bottom:12px;}
+h3{font-size:1.05rem;margin-bottom:6px;}
 
-    .hero h1 {
-      background: linear-gradient(135deg, #6366f1, #9333ea);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+p{color:var(--muted);font-size:0.95rem;}
 
-    .hero p {
-      max-width: 520px;
-      margin: 10px auto 18px;
-    }
+.hero{
+  text-align:center;
+  padding-top:90px;
+  position:relative;
+}
 
-    .btn {
-      padding: 10px 16px;
-      border-radius: 6px;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.9rem;
-      margin: 4px;
-      display: inline-block;
-    }
+.hero::before{
+  content:"";
+  position:absolute;
+  top:-150px;
+  left:50%;
+  transform:translateX(-50%);
+  width:600px;
+  height:300px;
+  background:radial-gradient(circle, rgba(99,102,241,0.25), transparent 70%);
+  filter:blur(60px);
+  z-index:0;
+}
 
-    .strip {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
+.hero *{position:relative;}
 
-    .tag {
-      font-size: 0.8rem;
-      padding: 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      color: var(--muted);
-    }
+.hero h1{
+  background:linear-gradient(135deg,#6366f1,#9333ea);
+  -webkit-background-clip:text;
+  color:transparent;
+}
 
-    .section {
-      margin-top: 30px;
-    }
+.hero p{max-width:520px;margin:12px auto 20px;}
 
-    .grid {
-      display: grid;
-      gap: 12px;
-    }
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:6px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-size:0.9rem;
+  margin:4px;
+}
 
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
+.strip{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      padding: 14px;
-      border-radius: 10px;
-      transition: 0.2s;
-    }
+.tag{
+  font-size:0.75rem;
+  padding:5px 10px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  color:var(--muted);
+}
 
-    .card:hover {
-      border-color: var(--accent);
-    }
+.section{margin-top:40px;}
 
-    .skills span {
-      font-size: 0.75rem;
-      padding: 4px 8px;
-      margin: 3px;
-      display: inline-block;
-      background: rgba(255,255,255,0.05);
-      border-radius: 6px;
-    }
+.grid{display:grid;gap:12px;}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
 
-    footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-  </style>
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:16px;
+  border-radius:10px;
+  transition:.2s;
+}
+
+.card:hover{
+  border-color:var(--accent);
+  transform:translateY(-4px);
+}
+
+.skills span{
+  font-size:0.75rem;
+  padding:4px 8px;
+  margin:3px;
+  display:inline-block;
+  background:rgba(255,255,255,0.05);
+  border-radius:6px;
+}
+
+.project p{margin-bottom:4px;font-size:0.85rem;}
+
+.cta{
+  text-align:center;
+}
+
+footer{
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid var(--border);
+  text-align:center;
+  font-size:0.8rem;
+  color:var(--muted);
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero container">
-    <h1>Scalable Backend Systems & SaaS Architecture</h1>
-    <p>
-      I build high-performance backend systems with Python, Django, and FastAPI — focused on real-world scalability, clean architecture, and reliable APIs.
-    </p>
-    <div>
-      <a href="mailto:your@email.com" class="btn">Hire Me</a>
-      <a href="#projects" class="btn">View Work</a>
+<!-- HERO -->
+<section class="hero container">
+  <h1>Building Scalable Backend Systems & SaaS Platforms</h1>
+  <p>
+    I design and engineer high-performance backend systems that handle real-world scale — from API architecture to Stripe billing and SaaS infrastructure.
+  </p>
+  <div>
+    <a href="mailto:your@email.com" class="btn">Hire Me</a>
+    <a href="#projects" class="btn">View Work</a>
+  </div>
+
+  <div class="strip">
+    <div class="tag">SaaS Systems</div>
+    <div class="tag">API Architecture</div>
+    <div class="tag">Stripe Billing</div>
+    <div class="tag">Scalable Systems</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="container section">
+  <h2>About</h2>
+  <p>
+    I'm Suraj Patidar, a backend architect focused on building systems that don't break under scale. I work at the intersection of business logic and infrastructure — translating complex requirements into clean, maintainable, and performant backend systems.
+    <br><br>
+    My work is centered around SaaS platforms, API ecosystems, and billing systems where reliability and clarity matter more than hype.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="container section">
+  <h2>Core Stack</h2>
+  <div class="grid grid-3">
+    <div class="card skills">
+      <h3>Backend</h3>
+      <span>Python</span><span>Django</span><span>FastAPI</span><span>Flask</span>
+    </div>
+    <div class="card skills">
+      <h3>Infrastructure</h3>
+      <span>AWS</span><span>Docker</span><span>Redis</span><span>Celery</span>
+    </div>
+    <div class="card skills">
+      <h3>Payments</h3>
+      <span>Stripe</span><span>Billing Systems</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container section">
+  <h2>Selected Work</h2>
+  <div class="grid grid-3">
+
+    <div class="card project">
+      <h3>Marinapy</h3>
+      <p><strong>Problem:</strong> Complex marina operations at scale</p>
+      <p><strong>Solution:</strong> Multi-tenant SaaS backend with role-based APIs</p>
+      <p><strong>Stack:</strong> Django, DRF, PostgreSQL</p>
     </div>
 
-    <div class="strip">
-      <div class="tag">SaaS Systems</div>
-      <div class="tag">API Architecture</div>
-      <div class="tag">Stripe Billing</div>
-      <div class="tag">Scalable Systems</div>
+    <div class="card project">
+      <h3>Upstrm</h3>
+      <p><strong>Problem:</strong> Payment infrastructure for digital assets</p>
+      <p><strong>Solution:</strong> Stripe-powered backend system</p>
+      <p><strong>Stack:</strong> Flask, Stripe</p>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="container section">
-    <h2>About</h2>
-    <p>
-      Backend engineer focused on building scalable SaaS systems and APIs. Strong experience in Django, FastAPI, and Stripe integrations with production-grade architecture and performance optimization.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="container section">
-    <h2>Core Stack</h2>
-    <div class="grid grid-3">
-      <div class="card skills">
-        <h3>Backend</h3>
-        <span>Python</span><span>Django</span><span>FastAPI</span><span>Flask</span>
-      </div>
-      <div class="card skills">
-        <h3>Infra</h3>
-        <span>AWS</span><span>Docker</span><span>Redis</span><span>Celery</span>
-      </div>
-      <div class="card skills">
-        <h3>Payments</h3>
-        <span>Stripe</span><span>Billing</span>
-      </div>
+    <div class="card project">
+      <h3>Sharelyze</h3>
+      <p><strong>Problem:</strong> File engagement tracking</p>
+      <p><strong>Solution:</strong> Analytics-driven API system</p>
+      <p><strong>Stack:</strong> Django, DRF</p>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="container section">
-    <h2>Selected Work</h2>
-    <div class="grid grid-3">
-
-      <div class="card">
-        <h3>Marinapy</h3>
-        <p>Multi-portal SaaS backend for marina operations with scalable APIs and role-based workflows.</p>
-      </div>
-
-      <div class="card">
-        <h3>Upstrm</h3>
-        <p>Stripe-integrated backend for digital transactions and payment workflows.</p>
-      </div>
-
-      <div class="card">
-        <h3>Sharelyze</h3>
-        <p>File analytics backend with tracking APIs for engagement insights.</p>
-      </div>
-
-      <div class="card">
-        <h3>Feltiv</h3>
-        <p>Media backend system for voice automation and subtitle processing.</p>
-      </div>
-
+    <div class="card project">
+      <h3>Feltiv</h3>
+      <p><strong>Problem:</strong> Media processing workflows</p>
+      <p><strong>Solution:</strong> Backend for voice automation & subtitles</p>
+      <p><strong>Stack:</strong> Django</p>
     </div>
-  </section>
 
-  <!-- SERVICES -->
-  <section class="container section">
-    <h2>What I Do</h2>
-    <div class="grid grid-3">
-      <div class="card"><h3>SaaS Development</h3></div>
-      <div class="card"><h3>API Engineering</h3></div>
-      <div class="card"><h3>Stripe Integration</h3></div>
-      <div class="card"><h3>System Design</h3></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="container section">
+  <h2>Services</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>SaaS Development</h3>
+      <p>From idea to production — structured, scalable SaaS systems.</p>
     </div>
-  </section>
+    <div class="card">
+      <h3>API Engineering</h3>
+      <p>Clean, secure, and performant APIs built for real-world usage.</p>
+    </div>
+    <div class="card">
+      <h3>Stripe Integration</h3>
+      <p>Robust billing systems with subscriptions, invoices, and flows.</p>
+    </div>
+    <div class="card">
+      <h3>System Architecture</h3>
+      <p>Backend systems designed for scale, clarity, and long-term growth.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- CONTACT CTA -->
-  <section class="container section" style="text-align:center;">
-    <h2>Let’s build something scalable</h2>
-    <p style="margin-bottom:10px;">Direct collaboration. No noise.</p>
-    <a href="mailto:your@email.com" class="btn">Contact Me</a>
-  </section>
+<!-- SYSTEM THINKING -->
+<section class="container section">
+  <h2>System Thinking</h2>
+  <p>
+    I don't just write code — I design systems. From database modeling to async processing and API performance, every decision is made for long-term scalability, maintainability, and operational clarity.
+  </p>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    Suraj Patidar · Python Developer · Django Developer · SaaS Backend Architect
-  </footer>
+<!-- CTA -->
+<section class="container section cta">
+  <h2>Let’s build something scalable together</h2>
+  <p style="margin-bottom:10px;">Serious projects only. Direct collaboration.</p>
+  <a href="mailto:your@email.com" class="btn">Start Conversation</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Suraj Patidar · Python Developer · Django Developer · SaaS Backend Architect
+</footer>
 
 </body>
 </html>
