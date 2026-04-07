@@ -1,152 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Suraj Patidar | Python Developer | Django Developer | SaaS Backend Architect</title>
-<meta name="description" content="Suraj Patidar is a Python Backend Architect specializing in Django, FastAPI, SaaS systems, API development, and Stripe billing integrations.">
+  <title>Suraj Patidar | Python Developer | Django Developer | SaaS Backend Architect</title>
+  <meta name="description"
+    content="Suraj Patidar is a Python Backend Architect specializing in Django, FastAPI, SaaS systems, API development, and Stripe billing integrations.">
 
-<meta property="og:title" content="Suraj Patidar | Backend Architect">
-<meta property="og:description" content="Scalable SaaS systems, APIs, and backend architecture using Python, Django, and FastAPI.">
-<meta property="og:type" content="website">
+  <meta property="og:title" content="Suraj Patidar | Backend Architect">
+  <meta property="og:description"
+    content="Scalable SaaS systems, APIs, and backend architecture using Python, Django, and FastAPI.">
+  <meta property="og:type" content="website">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root{
-  --bg:#07090f;
-  --card:rgba(255,255,255,0.04);
-  --border:rgba(255,255,255,0.06);
-  --text:#e6eaf2;
-  --muted:#8b95a7;
-  --accent:#6366f1;
-}
+  <style>
+    :root {
+      --bg: #07090f;
+      --card: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.06);
+      --text: #e6eaf2;
+      --muted: #8b95a7;
+      --accent: #6366f1;
+    }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-body{background:var(--bg);color:var(--text);}
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
 
-.container{max-width:1100px;margin:auto;padding:60px 20px;}
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 20px;
+    }
 
-h1{font-size:2.8rem;line-height:1.2;}
-h2{font-size:1.6rem;margin-bottom:12px;}
-h3{font-size:1.05rem;margin-bottom:6px;}
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+    }
 
-p{color:var(--muted);font-size:0.95rem;}
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
 
-.hero{
-  text-align:center;
-  padding-top:90px;
-  position:relative;
-}
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
 
-.hero::before{
-  content:"";
-  position:absolute;
-  top:-150px;
-  left:50%;
-  transform:translateX(-50%);
-  width:600px;
-  height:300px;
-  background:radial-gradient(circle, rgba(99,102,241,0.25), transparent 70%);
-  filter:blur(60px);
-  z-index:0;
-}
+    p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
-.hero *{position:relative;}
+    .hero {
+      text-align: center;
+      padding-top: 80px;
+      position: relative;
+    }
 
-.hero h1{
-  background:linear-gradient(135deg,#6366f1,#9333ea);
-  -webkit-background-clip:text;
-  color:transparent;
-}
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.25), transparent 70%);
+      filter: blur(60px);
+      z-index: 0;
+    }
 
-.hero p{max-width:520px;margin:12px auto 20px;}
+    .hero * {
+      position: relative;
+    }
 
-.btn{
-  display:inline-block;
-  padding:10px 16px;
-  border-radius:6px;
-  background:var(--accent);
-  color:#fff;
-  text-decoration:none;
-  font-size:0.9rem;
-  margin:4px;
-}
+    .hero h1 {
+      background: linear-gradient(135deg, #6366f1, #9333ea);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
 
-.strip{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:20px;
-}
+    .hero p {
+      max-width: 520px;
+      margin: 12px auto 18px;
+    }
 
-.tag{
-  font-size:0.75rem;
-  padding:5px 10px;
-  border:1px solid var(--border);
-  border-radius:20px;
-  color:var(--muted);
-}
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin: 4px;
+    }
 
-.section{margin-top:40px;}
+    .strip {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
 
-.grid{display:grid;gap:12px;}
-.grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+    .tag {
+      font-size: 0.75rem;
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--muted);
+    }
 
-.card{
-  background:var(--card);
-  border:1px solid var(--border);
-  padding:16px;
-  border-radius:10px;
-  transition:.2s;
-}
+    .section {
+      margin-top: 20px;
+    }
 
-.card:hover{
-  border-color:var(--accent);
-  transform:translateY(-4px);
-}
+    .grid {
+      display: grid;
+      gap: 12px;
+    }
 
-.skills span{
-  font-size:0.75rem;
-  padding:4px 8px;
-  margin:3px;
-  display:inline-block;
-  background:rgba(255,255,255,0.05);
-  border-radius:6px;
-}
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
 
-.project p{margin-bottom:4px;font-size:0.85rem;}
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: 10px;
+      transition: .2s;
+    }
 
-.cta{
-  text-align:center;
-}
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
 
-footer{
-  margin-top:40px;
-  padding-top:20px;
-  border-top:1px solid var(--border);
-  text-align:center;
-  font-size:0.8rem;
-  color:var(--muted);
-}
-</style>
+    .skills span {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      margin: 3px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+    }
+
+    .project p {
+      margin-bottom: 4px;
+      font-size: 0.85rem;
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .sticky-cta {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 
 <body>
 
+<a href="mailto:iamsurajpatidar@email.com" class="sticky-cta">Hire Me</a>
+
 <!-- HERO -->
 <section class="hero container">
-  <h1>Building Scalable Backend Systems & SaaS Platforms</h1>
+  <h1>Backend Systems That Scale With Your SaaS — Not Break Under It</h1>
   <p>
-    I design and engineer high-performance backend systems that handle real-world scale — from API architecture to Stripe billing and SaaS infrastructure.
+    I help founders and businesses build reliable backend systems, APIs, and Stripe billing infrastructure that handle
+    real users, real transactions, and real scale — without constant rewrites.
   </p>
   <div>
     <a href="mailto:iamsurajpatidar@email.com" class="btn">Hire Me</a>
     <a href="#projects" class="btn">View Work</a>
   </div>
+  <p style="margin-top:10px;font-size:0.8rem;color:#8b95a7;">
+    Trusted for SaaS architecture, API systems, and Stripe billing workflows
+  </p>
 
   <div class="strip">
     <div class="tag">SaaS Systems</div>
@@ -156,13 +219,32 @@ footer{
   </div>
 </section>
 
+<!-- WHO -->
+<section class="container section">
+  <h2>Who I Work With</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Startup Founders</h3>
+      <p>Building SaaS products that need a strong backend foundation from day one.</p>
+    </div>
+    <div class="card">
+      <h3>Scaling Products</h3>
+      <p>Fix performance issues, scaling problems, and technical debt in growing systems.</p>
+    </div>
+    <div class="card">
+      <h3>Agencies & Teams</h3>
+      <p>Need a backend expert for APIs, architecture, or Stripe billing systems.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section class="container section">
   <h2>About</h2>
   <p>
-    I'm Suraj Patidar, a backend architect focused on building systems that don't break under scale. I work at the intersection of business logic and infrastructure — translating complex requirements into clean, maintainable, and performant backend systems.
+    I'm Suraj Patidar, a <strong>Python Developer</strong> and <strong>Django Developer</strong> focused on building backend systems that actually survive production. I specialize in SaaS platforms, API ecosystems, and billing systems where performance, scalability, and reliability directly impact business success.
     <br><br>
-    My work is centered around SaaS platforms, API ecosystems, and billing systems where reliability and clarity matter more than hype.
+    Instead of building temporary solutions, I design long-term systems that handle real users, real data, and real transactions — with clean architecture and minimal technical debt.
   </p>
 </section>
 
@@ -193,29 +275,22 @@ footer{
     <div class="card project">
       <h3>Marinapy</h3>
       <p><strong>Problem:</strong> Complex marina operations at scale</p>
-      <p><strong>Solution:</strong> Multi-tenant SaaS backend with role-based APIs</p>
-      <p><strong>Stack:</strong> Django, DRF, PostgreSQL</p>
+      <p><strong>Solution:</strong> Multi-tenant SaaS backend</p>
+      <p><strong>Impact:</strong> Built for scalability & operational efficiency</p>
     </div>
 
     <div class="card project">
       <h3>Upstrm</h3>
-      <p><strong>Problem:</strong> Payment infrastructure for digital assets</p>
+      <p><strong>Problem:</strong> Payment infrastructure complexity</p>
       <p><strong>Solution:</strong> Stripe-powered backend system</p>
-      <p><strong>Stack:</strong> Flask, Stripe</p>
+      <p><strong>Impact:</strong> Reliable billing workflows</p>
     </div>
 
     <div class="card project">
       <h3>Sharelyze</h3>
       <p><strong>Problem:</strong> File engagement tracking</p>
-      <p><strong>Solution:</strong> Analytics-driven API system</p>
-      <p><strong>Stack:</strong> Django, DRF</p>
-    </div>
-
-    <div class="card project">
-      <h3>Feltiv</h3>
-      <p><strong>Problem:</strong> Media processing workflows</p>
-      <p><strong>Solution:</strong> Backend for voice automation & subtitles</p>
-      <p><strong>Stack:</strong> Django</p>
+      <p><strong>Solution:</strong> Analytics API system</p>
+      <p><strong>Impact:</strong> Data-driven insights</p>
     </div>
 
   </div>
@@ -225,56 +300,78 @@ footer{
 <section class="container section">
   <h2>Services</h2>
   <div class="grid grid-3">
+
     <div class="card">
-      <h3>SaaS Development</h3>
-      <p>From idea to production — structured, scalable SaaS systems.</p>
+      <h3><a href="/services/saas-development.html">SaaS Development</a></h3>
+      <p>End-to-end SaaS systems designed for growth, scalability, and real users.</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="/services/api-development.html">API Engineering</a></h3>
+      <p>APIs built for performance, scalability, and seamless integrations.</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="/services/stripe-integration.html">Stripe Integration</a></h3>
+      <p>Robust billing systems with subscriptions, invoices, and automation.</p>
+    </div>
+
+    <div class="card">
+      <h3><a href="/services/django-developer.html">Django Development</a></h3>
+      <p>Production-ready Django systems built for real-world scale.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="container section">
+  <h2>Insights & Engineering Notes</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3><a href="/blog/django-saas-guide.html">How to Build SaaS with Django</a></h3>
     </div>
     <div class="card">
-      <h3>API Engineering</h3>
-      <p>Clean, secure, and performant APIs built for real-world usage.</p>
+      <h3><a href="/blog/stripe-billing-architecture.html">Stripe Billing Architecture</a></h3>
     </div>
     <div class="card">
-      <h3>Stripe Integration</h3>
-      <p>Robust billing systems with subscriptions, invoices, and flows.</p>
-    </div>
-    <div class="card">
-      <h3>System Architecture</h3>
-      <p>Backend systems designed for scale, clarity, and long-term growth.</p>
+      <h3><a href="/blog/fastapi-vs-django.html">FastAPI vs Django</a></h3>
     </div>
   </div>
 </section>
 
-<!-- SYSTEM THINKING -->
+<!-- WHY -->
 <section class="container section">
-  <h2>System Thinking</h2>
-  <p>
-    I don't just write code — I design systems. From database modeling to async processing and API performance, every decision is made for long-term scalability, maintainability, and operational clarity.
-  </p>
+  <h2>Why Clients Work With Me</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Production-First</h3>
+      <p>Systems designed for real-world usage, not demos.</p>
+    </div>
+    <div class="card">
+      <h3>Scalable Design</h3>
+      <p>Architecture built for long-term growth.</p>
+    </div>
+    <div class="card">
+      <h3>Business Focus</h3>
+      <p>Backend systems aligned with revenue and operations.</p>
+    </div>
+  </div>
 </section>
 
 <!-- CTA -->
 <section class="container section cta">
   <h2>Let’s build something scalable together</h2>
-  <p style="margin-bottom:10px;">Serious projects only. Direct collaboration.</p>
+  <p style="margin-bottom:10px;">
+    Have a SaaS idea or scaling issue? Let’s build a system that actually works in production.
+  </p>
   <a href="mailto:iamsurajpatidar@email.com" class="btn">Start Conversation</a>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  Suraj Patidar · Python Developer · Django Developer · SaaS Backend Architect
+  Suraj Patidar · Python Developer · Django Developer · SaaS Developer · Backend Architect · API Engineer
 </footer>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Person",
- "name": "Suraj Patidar",
- "url": "https://iamsurajpatidar18.github.io/",
- "jobTitle": "Python Backend Architect",
- "sameAs": [
-   "https://github.com/iamsurajpatidar18",
-   "https://in.linkedin.com/in/surajpatidar"
- ]
-}
-</script>
+
 </body>
 </html>
