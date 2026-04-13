@@ -82,7 +82,7 @@ Python Developer • Django Developer • FastAPI Developer • Backend Engineer
 
 ## 📫 Connect
 
-📧 suraj.pysquad@gmail.com  
+[htt ](https://iamsurajpatidar18.github.io)
 
 ---
 
