@@ -82,7 +82,7 @@ Python Developer • Django Developer • FastAPI Developer • Backend Engineer
 
 ## 📫 Connect
 
-[htt ](https://iamsurajpatidar18.github.io)
+[iamsurajpatidar ](https://iamsurajpatidar18.github.io)
 
 ---
 
