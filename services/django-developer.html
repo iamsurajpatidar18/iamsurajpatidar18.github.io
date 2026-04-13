@@ -53,6 +53,50 @@ p{color:var(--muted);}
   border-radius:6px;
 }
 a{color:#6366f1;text-decoration:none;}
+.sticky-cta {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .social-bar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-bar a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  transition: 0.2s;
+}
+
+.social-bar a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.social-bar svg {
+  width: 18px;
+  height: 18px;
+}
 </style>
 </head>
 

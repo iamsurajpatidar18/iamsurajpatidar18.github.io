@@ -53,10 +53,69 @@ p{color:var(--muted);}
   border-radius:6px;
 }
 a{color:#6366f1;text-decoration:none;}
+.sticky-cta {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .social-bar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-bar a {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  transition: 0.2s;
+}
+
+.social-bar a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.social-bar svg {
+  width: 18px;
+  height: 18px;
+}
 </style>
 </head>
 
 <body>
+  <div class="social-bar">
+  <a href="https://github.com/iamsurajpatidar18" target="_blank" title="GitHub">
+    <svg viewBox="0 0 24 24"><path fill="currentColor"
+      d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.84 10.91.57.1.78-.25.78-.55v-2.02c-3.19.7-3.86-1.54-3.86-1.54-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25 3.32.96.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.27-5.23-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.93 10.93 0 0 1 5.73 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.38-2.69 5.34-5.25 5.63.41.36.77 1.09.77 2.2v3.26c0 .3.21.66.79.55A10.99 10.99 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+    </svg>
+  </a>
+
+  <a href="https://in.linkedin.com/in/surajpatidar" target="_blank" title="LinkedIn">
+    <svg viewBox="0 0 24 24"><path fill="currentColor"
+      d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.5 8h4v16h-4V8zm7.5 0h3.6v2.2h.05c.5-.95 1.72-2.2 3.55-2.2 3.8 0 4.5 2.5 4.5 5.8V24h-4v-8.8c0-2.1-.04-4.8-2.93-4.8-2.93 0-3.38 2.3-3.38 4.65V24h-4V8z"/>
+    </svg>
+  </a>
+</div>
+
+<a href="mailto:iamsurajpatidar@email.com" class="sticky-cta">Hire Me</a>
 
 <section class="hero container">
   <h1>SaaS Development from Idea to Scale</h1>
