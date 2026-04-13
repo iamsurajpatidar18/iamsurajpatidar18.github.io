@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://iamsurajpatidar18.github.io/</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/services/django-developer.html</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/services/api-development.html</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/services/saas-development.html</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/services/stripe-integration.html</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/blog/django-saas-guide.html</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/blog/fastapi-vs-django.html</loc></url>
-  <url><loc>https://iamsurajpatidar18.github.io/blog/stripe-billing-architecture.html</loc></url>
+
+<url>
+<loc>https://iamsurajpatidar18.github.io</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/services/django-developer</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/services/api-development</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/services/saas-development</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/services/stripe-integration</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/blog/django-saas-guide</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/blog/fastapi-vs-django</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+<url>
+<loc>https://iamsurajpatidar18.github.io/blog/stripe-billing-architecture</loc>
+<lastmod>2026-04-13</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.1</priority>
+</url>
+
 </urlset>
