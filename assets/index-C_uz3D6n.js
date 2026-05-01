@@ -386,6 +386,8 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
           }
           .contact-list {
             display: flex;
+            flex-direction: column;
+            gap: 16px;
           }
           .contact-icon {
             width: 36px;
@@ -1225,18 +1227,18 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
               min-height: auto;
             }
 
-            /* Desktop Overrides */
-            @media (min-width: 1025px) {
+            /* Desktop Breakpoint (Tablet Landscape and up) */
+            @media (min-width: 1024px) {
               .app-shell {
                 padding: 40px 20px;
               }
               .main-layout {
                 flex-direction: row;
+                align-items: flex-start;
                 gap: 24px;
               }
               .content-wrapper {
                 padding: 48px;
-                margin-bottom: 0;
                 min-height: 700px;
               }
               .glow-container {
