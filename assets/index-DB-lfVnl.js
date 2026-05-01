@@ -208,25 +208,29 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
  * See the LICENSE file in the root directory of this source tree.
  */const l2=V("Twitter",[["path",{d:"M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z",key:"pff0z6"}]]),u2="/assets/avatar-DQEREHKr.png",c2=()=>{const[e,t]=x.useState(!1),n=[{icon:m.jsx(Ny,{size:16}),label:"Email",value:"iamsurajpatidar@email.com",isCopyable:!0},{icon:m.jsx(Bl,{size:16}),label:"WhatsApp",value:"+91 88495 35433",link:"https://wa.me/918849535433"},{icon:m.jsx(_y,{size:16}),label:"Location",value:"India"},{icon:m.jsx(bc,{size:16}),label:"Focus",value:"SaaS Architecture"},{icon:m.jsx(XP,{size:16}),label:"Current Organisation",value:"PySquad",link:"https://www.pysquad.com"}],r=()=>{navigator.clipboard.writeText("iamsurajpatidar@email.com"),t(!0),setTimeout(()=>t(!1),2e3)};return m.jsxs("aside",{className:"glass-card sidebar",children:[m.jsxs("div",{className:"profile-container",children:[m.jsxs("div",{className:"avatar-wrapper",children:[m.jsx("img",{src:u2,alt:"Suraj Patidar",className:"profile-img"}),m.jsx("div",{className:"online-indicator"})]}),m.jsxs("div",{className:"profile-info",children:[m.jsx("h1",{className:"profile-name",children:"Suraj Patidar"}),m.jsxs("div",{className:"profile-badge-container",children:[m.jsx("span",{className:"tech-badge",children:"Software Engineer"}),m.jsx("span",{className:"tech-badge",children:"Python Expert"})]})]})]}),m.jsx("div",{className:"separator"}),m.jsx("div",{className:"contact-list",children:n.map((i,o)=>m.jsxs("div",{className:"contact-item",children:[m.jsx("div",{className:"contact-icon",children:i.icon}),m.jsxs("div",{className:"contact-text",children:[m.jsx("p",{className:"contact-label",children:i.label}),m.jsxs("div",{className:"contact-value-wrapper",children:[i.link?m.jsx("a",{href:i.link,target:"_blank",rel:"noopener noreferrer",className:"contact-link-sidebar",children:i.value}):m.jsx("p",{className:"contact-value",children:i.value}),i.isCopyable&&m.jsx("button",{className:"small-copy-btn",onClick:r,title:"Copy Email",children:e?m.jsx(ZP,{size:12}):m.jsx(t2,{size:12})})]})]})]},o))}),m.jsx("div",{className:"sidebar-actions",children:m.jsxs("a",{href:"/resume.pdf",download:!0,className:"btn btn-primary download-btn",children:[m.jsx(n2,{size:16}),"Download CV"]})}),m.jsx("div",{className:"separator"}),m.jsxs("div",{className:"social-links",children:[m.jsx("a",{href:"https://github.com/iamsurajpatidar18",target:"_blank",rel:"noopener noreferrer",className:"social-icon",children:m.jsx(Ly,{size:18})}),m.jsx("a",{href:"https://in.linkedin.com/in/surajpatidar",target:"_blank",rel:"noopener noreferrer",className:"social-icon",children:m.jsx(Iy,{size:18})}),m.jsx("a",{href:"#",className:"social-icon",children:m.jsx(l2,{size:18})})]}),m.jsx("style",{dangerouslySetInnerHTML:{__html:`
         .sidebar {
-          padding: 32px;
-          width: var(--sidebar-width);
-          position: sticky;
-          top: 40px;
-          height: fit-content;
+          padding: 24px;
+          width: 100%;
+          position: relative;
           display: flex;
           flex-direction: column;
-          gap: 24px;
+          gap: 20px;
+        }
+
+        .profile-container {
+          display: flex;
+          align-items: center;
+          gap: 20px;
         }
 
         .avatar-wrapper {
           position: relative;
-          width: 160px;
-          height: 160px;
-          margin: 0 auto 20px;
-          border-radius: 32px;
+          width: 80px;
+          height: 80px;
+          border-radius: 20px;
           overflow: hidden;
           background: #f1f5f9;
           border: 1px solid var(--border-color);
+          flex-shrink: 0;
         }
 
         .profile-img {
@@ -237,37 +241,37 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
 
         .online-indicator {
           position: absolute;
-          bottom: 12px;
-          right: 12px;
-          width: 14px;
-          height: 14px;
+          bottom: 6px;
+          right: 6px;
+          width: 12px;
+          height: 12px;
           background: var(--success-color);
           border-radius: 50%;
           border: 2px solid #ffffff;
         }
 
         .profile-info {
-          text-align: center;
+          text-align: left;
         }
 
         .profile-name {
-          font-size: 1.6rem;
-          margin-bottom: 12px;
+          font-size: 1.25rem;
+          margin-bottom: 8px;
         }
 
         .profile-badge-container {
           display: flex;
-          gap: 8px;
-          justify-content: center;
+          gap: 6px;
+          justify-content: flex-start;
           flex-wrap: wrap;
         }
 
         .tech-badge {
           background: #f1f5f9;
           color: var(--accent-color);
-          padding: 4px 12px;
-          border-radius: 8px;
-          font-size: 0.75rem;
+          padding: 3px 8px;
+          border-radius: 6px;
+          font-size: 0.65rem;
           font-weight: 600;
           border: 1px solid var(--border-color);
         }
@@ -279,8 +283,8 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .contact-list {
-          display: flex;
-          flex-direction: column;
+          display: grid;
+          grid-template-columns: 1fr;
           gap: 16px;
         }
 
@@ -291,10 +295,10 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .contact-icon {
-          width: 36px;
-          height: 36px;
+          width: 32px;
+          height: 32px;
           background: #f8fafc;
-          border-radius: 10px;
+          border-radius: 8px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -303,7 +307,7 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .contact-label {
-          font-size: 0.65rem;
+          font-size: 0.6rem;
           color: var(--text-muted);
           text-transform: uppercase;
           letter-spacing: 0.05em;
@@ -312,41 +316,15 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         .contact-value-wrapper {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 6px;
         }
 
         .contact-value, .contact-link-sidebar {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
           color: var(--text-primary);
           font-weight: 500;
           text-decoration: none;
-        }
-
-        .contact-link-sidebar:hover {
-          color: var(--accent-color);
-        }
-
-        .small-copy-btn {
-          background: none;
-          border: none;
-          color: var(--text-muted);
-          cursor: pointer;
-          padding: 4px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 4px;
-          transition: all 0.2s ease;
-        }
-
-        .small-copy-btn:hover {
-          color: var(--accent-color);
-          background: #f1f5f9;
-        }
-
-        .sidebar-actions {
-          display: flex;
-          flex-direction: column;
+          word-break: break-all;
         }
 
         .sidebar-actions .btn {
@@ -360,9 +338,9 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .social-icon {
-          width: 40px;
-          height: 40px;
-          border-radius: 12px;
+          width: 36px;
+          height: 36px;
+          border-radius: 10px;
           background: #f8fafc;
           display: flex;
           align-items: center;
@@ -371,18 +349,50 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
           border: 1px solid #f1f5f9;
         }
 
-        .social-icon:hover {
-          color: var(--accent-color);
-          border-color: var(--accent-color);
-          background: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
+        /* Desktop Overrides */
+        @media (min-width: 1025px) {
           .sidebar {
-            width: 100%;
-            position: relative;
-            top: 0;
-            padding: 24px;
+            padding: 32px;
+            width: var(--sidebar-width);
+            position: sticky;
+            top: 40px;
+            gap: 24px;
+          }
+          .profile-container {
+            flex-direction: column;
+            text-align: center;
+            gap: 0;
+          }
+          .avatar-wrapper {
+            width: 160px;
+            height: 160px;
+            border-radius: 32px;
+            margin-bottom: 20px;
+          }
+          .profile-info {
+            text-align: center;
+          }
+          .profile-name {
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+          }
+          .profile-badge-container {
+            justify-content: center;
+            gap: 8px;
+          }
+          .tech-badge {
+            padding: 4px 12px;
+            font-size: 0.75rem;
+          }
+          .contact-list {
+            display: flex;
+          }
+          .contact-icon {
+            width: 36px;
+            height: 36px;
+          }
+          .contact-value, .contact-link-sidebar {
+            font-size: 0.85rem;
           }
         }
       `}})]})},d2=()=>{const e=[{path:"/about",label:"About"},{path:"/resume",label:"Resume"},{path:"/portfolio",label:"Portfolio"},{path:"/blogs",label:"Blogs"},{path:"/contact",label:"Contact"}];return m.jsxs("nav",{className:"navigation-container",children:[m.jsx("div",{className:"nav-pill glass-card",children:e.map(t=>m.jsx($m,{to:t.path,className:({isActive:n})=>`nav-tab ${n?"active":""}`,children:t.label},t.path))}),m.jsx("style",{dangerouslySetInnerHTML:{__html:`
@@ -426,81 +436,87 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
 
         @media (max-width: 1024px) {
           .navigation-container {
-            position: fixed;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
+            position: sticky;
+            top: 10px;
+            left: 0;
             z-index: 1000;
+            width: 100%;
+            display: flex;
             justify-content: center;
-            width: fit-content;
-            padding: 0 10px;
+            padding: 0 12px;
+            margin-bottom: 10px;
           }
 
           .nav-pill {
             padding: 4px;
             gap: 2px;
             border-radius: 14px;
-            width: calc(100vw - 40px);
-            max-width: 500px;
-            justify-content: space-around;
+            width: 100%;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           }
 
           .nav-tab {
-            padding: 10px 12px;
-            font-size: 0.8rem;
+            padding: 8px 4px;
+            font-size: 0.7rem;
             flex: 1;
             text-align: center;
+            border-radius: 10px;
           }
         }
       `}})]})},f2=()=>{const e=[{label:"Years Exp",value:"4+",icon:m.jsx(jy,{size:18})},{label:"Projects",value:"10+",icon:m.jsx(bc,{size:18})},{label:"API Systems",value:"15+",icon:m.jsx(Oy,{size:18})},{label:"Reliability",value:"99.9%",icon:m.jsx(hh,{size:18})}],t=[{icon:m.jsx(a2,{size:24}),title:"Backend Development",desc:"Designing and maintaining scalable backend systems using Python, Django, Flask, and FastAPI."},{icon:m.jsx(My,{size:24}),title:"Data Engineering",desc:"Expertise in PostgreSQL and MySQL for high-performance data modeling and optimization."},{icon:m.jsx(hh,{size:24}),title:"API Integration",desc:"Building and consuming RESTful APIs with secure authentication and third-party integrations like Stripe."},{icon:m.jsx(Dy,{size:24}),title:"Core Concepts",desc:"Strong foundation in OOPs, Data Structures, Algorithms, and API security best practices."}];return m.jsxs("section",{className:"about-page",children:[m.jsxs(bn,{children:[m.jsx("title",{children:"About | Suraj Patidar | Software Engineer & Python Expert"}),m.jsx("meta",{name:"description",content:"Learn more about Suraj Patidar, a result-oriented Software Engineer at PySquad Informatics LLP specializing in Python backend development and scalable architecture."})]}),m.jsxs("header",{className:"page-header",children:[m.jsx("h1",{className:"page-title",children:"About Me"}),m.jsx("div",{className:"title-bar"})]}),m.jsxs("section",{className:"intro-text",children:[m.jsxs("p",{children:["I am a ",m.jsx("strong",{children:"Software Engineer"})," at ",m.jsx("strong",{children:"PySquad Informatics LLP"})," since 2020. I am a result-oriented Python Backend Developer with hands-on experience designing, developing, and maintaining scalable backend systems."]}),m.jsxs("p",{children:["My expertise lies in the Python ecosystem, specifically ",m.jsx("strong",{children:"Django, Flask, and FastAPI"}),". I thrive in Agile environments, writing clean and efficient code using OOP principles, and collaborating closely with cross-functional teams to deliver high-quality software solutions."]})]}),m.jsx("div",{className:"stats-grid",children:e.map((n,r)=>m.jsxs("div",{className:"stat-card glass-card",children:[m.jsx("div",{className:"stat-icon",children:n.icon}),m.jsxs("div",{className:"stat-info",children:[m.jsx("h3",{className:"stat-value",children:n.value}),m.jsx("p",{className:"stat-label",children:n.label})]})]},r))}),m.jsxs("section",{className:"services-section",children:[m.jsx("h3",{className:"section-subtitle",children:"Technical Expertise"}),m.jsx("div",{className:"services-grid",children:t.map((n,r)=>m.jsxs("div",{className:"service-card glass-card",children:[m.jsx("div",{className:"service-icon-wrapper",children:n.icon}),m.jsxs("div",{className:"service-body",children:[m.jsx("h4",{children:n.title}),m.jsx("p",{children:n.desc})]})]},r))})]}),m.jsx("style",{dangerouslySetInnerHTML:{__html:`
         .page-header {
-          margin-bottom: 32px;
+          margin-bottom: 24px;
         }
 
         .page-title {
-          font-size: 2.5rem;
+          font-size: 2rem;
           font-weight: 700;
           margin-bottom: 12px;
         }
 
         .title-bar {
-          width: 60px;
-          height: 6px;
+          width: 50px;
+          height: 5px;
           background: var(--accent-color);
           border-radius: 10px;
-          box-shadow: 0 0 15px var(--accent-glow);
+          box-shadow: 0 0 10px var(--accent-glow);
         }
 
         .intro-text {
           color: var(--text-secondary);
-          font-size: 1.1rem;
-          line-height: 1.8;
+          font-size: 1rem;
+          line-height: 1.7;
           display: flex;
           flex-direction: column;
-          gap: 20px;
-          margin-bottom: 48px;
+          gap: 16px;
+          margin-bottom: 40px;
         }
 
         .stats-grid {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 20px;
-          margin-bottom: 48px;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+          margin-bottom: 40px;
         }
 
         .stat-card {
-          padding: 24px;
+          padding: 16px;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          gap: 16px;
+          text-align: center;
+          gap: 12px;
         }
 
         .stat-icon {
           color: var(--accent-color);
           background: #f1f5f9;
-          width: 44px;
-          height: 44px;
-          border-radius: 12px;
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -508,33 +524,34 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .stat-value {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           font-weight: 700;
           color: var(--text-primary);
         }
 
         .stat-label {
-          font-size: 0.75rem;
+          font-size: 0.7rem;
           color: var(--text-muted);
           text-transform: uppercase;
           letter-spacing: 0.05em;
         }
 
         .section-subtitle {
-          font-size: 1.8rem;
-          margin-bottom: 32px;
+          font-size: 1.5rem;
+          margin-bottom: 24px;
         }
 
         .services-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 24px;
+          grid-template-columns: 1fr;
+          gap: 16px;
         }
 
         .service-card {
-          padding: 32px;
+          padding: 24px;
           display: flex;
-          gap: 24px;
+          flex-direction: column;
+          gap: 16px;
         }
 
         .service-icon-wrapper {
@@ -543,28 +560,40 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .service-body h4 {
-          margin-bottom: 12px;
-          font-size: 1.2rem;
+          margin-bottom: 8px;
+          font-size: 1.1rem;
         }
 
         .service-body p {
           color: var(--text-secondary);
-          font-size: 0.95rem;
+          font-size: 0.9rem;
           line-height: 1.6;
         }
 
-        @media (max-width: 1024px) {
+        /* Desktop Overrides */
+        @media (min-width: 768px) {
           .stats-grid {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
           }
-        }
-
-        @media (max-width: 768px) {
+          .stat-card {
+            flex-direction: row;
+            text-align: left;
+            padding: 24px;
+          }
           .services-grid {
-            grid-template-columns: 1fr;
-          }
-          .stats-grid {
             grid-template-columns: 1fr 1fr;
+            gap: 24px;
+          }
+          .service-card {
+            flex-direction: row;
+            padding: 32px;
+          }
+          .page-title {
+            font-size: 2.5rem;
+          }
+          .intro-text {
+            font-size: 1.1rem;
           }
         }
       `}})]})},h2=()=>{const e=[{title:"Software Engineer",company:"PySquad Informatics LLP",period:"July 2020 - Present",desc:"Designing, developing, and maintaining backend applications using Python, Django, and Flask. Building RESTful APIs, optimizing PostgreSQL performance, and collaborating in an Agile/Scrum environment."}],t=[{title:"Bachelor’s Degree in Computer Science",institution:"GGTU",period:"2017 - 2020",desc:"Focused on core computer science principles, data structures, and algorithms."}],n=[{title:"Languages & Frameworks",icon:m.jsx(Oy,{size:18}),skills:["Python","Django","Flask","FastAPI","REST APIs"]},{title:"Databases",icon:m.jsx(My,{size:18}),skills:["PostgreSQL","MySQL","SQL","NoSQL Concepts"]},{title:"Backend & Tools",icon:m.jsx(o2,{size:18}),skills:["Celery","Redis","Stripe","Selenium","Git","AWS (EC2)"]},{title:"Core Concepts",icon:m.jsx(Dy,{size:18}),skills:["OOPs","Data Structures","Algorithms","API Security","Unit Testing"]}];return m.jsxs("section",{className:"resume-page",children:[m.jsxs(bn,{children:[m.jsx("title",{children:"Resume | Suraj Patidar | Software Engineer Experience & Skills"}),m.jsx("meta",{name:"description",content:"View the professional resume of Suraj Patidar. Highlights include Python development at PySquad, backend architecture skills, and a Computer Science degree from GGTU."})]}),m.jsxs("header",{className:"page-header",children:[m.jsx("h1",{className:"page-title",children:"Resume"}),m.jsx("div",{className:"title-bar"})]}),m.jsxs("div",{className:"resume-grid",children:[m.jsxs("section",{className:"resume-column",children:[m.jsxs("div",{className:"resume-section-header",children:[m.jsx("div",{className:"icon-badge",children:m.jsx(bc,{size:20})}),m.jsx("h3",{className:"resume-section-title",children:"Experience"})]}),m.jsx("div",{className:"resume-timeline",children:e.map((r,i)=>m.jsxs("article",{className:"timeline-block",children:[m.jsx("div",{className:"timeline-dot"}),m.jsx("h4",{className:"timeline-title",children:r.title}),m.jsxs("p",{className:"timeline-subtitle",children:[r.company," • ",r.period]}),m.jsx("p",{className:"timeline-text",children:r.desc})]},i))})]}),m.jsxs("section",{className:"resume-column",children:[m.jsxs("div",{className:"resume-section-header",children:[m.jsx("div",{className:"icon-badge",children:m.jsx(s2,{size:20})}),m.jsx("h3",{className:"resume-section-title",children:"Education"})]}),m.jsx("div",{className:"resume-timeline",children:t.map((r,i)=>m.jsxs("article",{className:"timeline-block",children:[m.jsx("div",{className:"timeline-dot"}),m.jsx("h4",{className:"timeline-title",children:r.title}),m.jsxs("p",{className:"timeline-subtitle",children:[r.institution," • ",r.period]}),m.jsx("p",{className:"timeline-text",children:r.desc})]},i))})]})]}),m.jsxs("section",{className:"skills-section-v2",children:[m.jsx("h3",{className:"section-subtitle",children:"Technical Skills"}),m.jsx("div",{className:"skills-container-v2",children:n.map((r,i)=>m.jsxs("div",{className:"skill-group-card glass-card",children:[m.jsxs("div",{className:"skill-group-header",children:[m.jsx("div",{className:"skill-group-icon",children:r.icon}),m.jsx("h4",{children:r.title})]}),m.jsx("div",{className:"skill-pills",children:r.skills.map((o,s)=>m.jsx("span",{className:"skill-pill",children:o},s))})]},i))})]}),m.jsx("style",{dangerouslySetInnerHTML:{__html:`
@@ -832,28 +861,30 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         .blog-container {
           display: flex;
           flex-direction: column;
-          gap: 24px;
+          gap: 16px;
         }
 
         .blog-card-premium {
           cursor: pointer;
+          width: 100%;
         }
 
         .blog-link-wrapper {
           text-decoration: none;
           color: inherit;
           display: block;
-          padding: 32px;
+          padding: 20px;
         }
 
         .blog-meta-v2 {
           display: flex;
-          gap: 16px;
-          margin-bottom: 16px;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin-bottom: 12px;
         }
 
         .blog-tag-v2, .blog-time-v2 {
-          font-size: 0.75rem;
+          font-size: 0.7rem;
           font-weight: 700;
           color: var(--accent-color);
           display: flex;
@@ -864,49 +895,62 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
         }
 
         .blog-title-v2 {
-          font-size: 1.6rem;
+          font-size: 1.25rem;
           font-weight: 700;
-          margin-bottom: 12px;
+          margin-bottom: 10px;
           line-height: 1.3;
+          word-break: break-word;
         }
 
         .blog-excerpt-v2 {
-          font-size: 1rem;
+          font-size: 0.9rem;
           color: var(--text-secondary);
-          margin-bottom: 24px;
-          line-height: 1.6;
+          margin-bottom: 20px;
+          line-height: 1.5;
         }
 
         .blog-footer-v2 {
           display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding-top: 24px;
+          flex-direction: column;
+          gap: 12px;
+          padding-top: 16px;
           border-top: 1px solid var(--border-color);
         }
 
         .blog-date-v2 {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
           color: var(--text-muted);
           font-weight: 500;
         }
 
         .blog-read-btn {
-          padding: 8px 16px;
+          padding: 10px 16px;
           font-size: 0.85rem;
+          width: 100%;
         }
 
-        @media (max-width: 600px) {
-          .blog-footer-v2 {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-          }
-          .blog-read-btn {
-            width: 100%;
+        /* Desktop Overrides */
+        @media (min-width: 768px) {
+          .blog-container {
+            gap: 24px;
           }
           .blog-link-wrapper {
-            padding: 24px;
+            padding: 32px;
+          }
+          .blog-title-v2 {
+            font-size: 1.6rem;
+          }
+          .blog-excerpt-v2 {
+            font-size: 1rem;
+          }
+          .blog-footer-v2 {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+          }
+          .blog-read-btn {
+            width: auto;
           }
         }
       `}})]}),g2=()=>{const{id:e}=Yx(),t=Ou(),n=Vy.find(i=>i.id===e);if(x.useEffect(()=>{window.scrollTo(0,0)},[]),!n)return m.jsxs("div",{className:"error-view",children:[m.jsx("h2",{children:"Blog post not found"}),m.jsx("button",{onClick:()=>t("/blogs"),className:"btn btn-primary",children:"Back to Blogs"})]});const r={"@context":"https://schema.org","@type":"BlogPosting",headline:n.title,description:n.desc,datePublished:n.date,author:{"@type":"Person",name:"Suraj Patidar"},mainEntityOfPage:{"@type":"WebPage","@id":`https://iamsurajpatidar18.github.io/blogs/${n.id}`}};return m.jsxs("div",{className:"blog-detail-view",children:[m.jsxs(bn,{children:[m.jsxs("title",{children:[n.title," | Suraj Patidar Blog"]}),m.jsx("meta",{name:"description",content:n.desc}),m.jsx("script",{type:"application/ld+json",children:JSON.stringify(r)})]}),m.jsxs("button",{onClick:()=>t("/blogs"),className:"btn btn-secondary back-btn",children:[m.jsx(YP,{size:18})," Back to Blogs"]}),m.jsxs("article",{className:"blog-full-article",children:[m.jsxs("header",{className:"blog-detail-header",children:[m.jsxs("div",{className:"blog-meta-v3",children:[m.jsxs("span",{className:"blog-tag-v2",children:[m.jsx(Fy,{size:12})," ",n.category]}),m.jsxs("span",{className:"blog-time-v2",children:[m.jsx(Ry,{size:12})," ",n.readTime]})]}),m.jsx("h1",{className:"blog-detail-title",children:n.title}),m.jsxs("div",{className:"blog-detail-date",children:[m.jsx(jy,{size:14})," Published on ",n.date]})]}),m.jsx("section",{className:"blog-detail-content",dangerouslySetInnerHTML:{__html:n.content}})]}),m.jsx("style",{dangerouslySetInnerHTML:{__html:`
@@ -1119,7 +1163,7 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
             .app-shell {
               min-height: 100vh;
               width: 100%;
-              padding: 40px 20px;
+              padding: 20px 12px;
               display: flex;
               justify-content: center;
               position: relative;
@@ -1133,8 +1177,8 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
               width: 100%;
               height: 100%;
               z-index: -1;
-              filter: blur(100px);
-              opacity: 0.3;
+              filter: blur(80px);
+              opacity: 0.2;
             }
 
             .glow-ball {
@@ -1143,18 +1187,18 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
             }
 
             .ball-1 {
-              width: 500px;
-              height: 500px;
-              top: -150px;
-              right: -100px;
+              width: 300px;
+              height: 300px;
+              top: -100px;
+              right: -50px;
               background: rgba(99, 102, 241, 0.15);
             }
 
             .ball-2 {
-              width: 400px;
-              height: 400px;
-              bottom: -100px;
-              left: -50px;
+              width: 250px;
+              height: 250px;
+              bottom: -50px;
+              left: -30px;
               background: rgba(6, 182, 212, 0.1); 
             }
 
@@ -1162,7 +1206,8 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
               max-width: 1240px;
               width: 100%;
               display: flex;
-              gap: 24px;
+              flex-direction: column;
+              gap: 20px;
               position: relative;
             }
 
@@ -1170,28 +1215,35 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
               flex: 1;
               display: flex;
               flex-direction: column;
-              gap: 24px;
+              gap: 20px;
               min-width: 0;
             }
 
             .content-wrapper {
-              padding: 48px;
+              padding: 20px 12px;
               flex: 1;
-              min-height: 700px;
+              min-height: auto;
             }
 
-            @media (max-width: 1024px) {
+            /* Desktop Overrides */
+            @media (min-width: 1025px) {
               .app-shell {
-                padding: 20px 10px;
+                padding: 40px 20px;
               }
               .main-layout {
-                flex-direction: column;
+                flex-direction: row;
                 gap: 24px;
               }
               .content-wrapper {
-                padding: 32px 20px;
-                margin-bottom: 90px;
-                min-height: auto;
+                padding: 48px;
+                margin-bottom: 0;
+                min-height: 700px;
               }
+              .glow-container {
+                filter: blur(100px);
+                opacity: 0.3;
+              }
+              .ball-1 { width: 500px; height: 500px; }
+              .ball-2 { width: 400px; height: 400px; }
             }
           `}})]})})})}const Rn=({children:e})=>m.jsx(wy.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},exit:{opacity:0,y:-20},transition:{duration:.3},children:e});Ca.createRoot(document.getElementById("root")).render(m.jsx(Y.StrictMode,{children:m.jsx(v2,{})}));
