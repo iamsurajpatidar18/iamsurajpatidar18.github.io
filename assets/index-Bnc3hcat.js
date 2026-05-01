@@ -190,6 +190,7 @@ Error generating stack: `+s.message+`
           display: flex;
           flex-direction: column;
           gap: 24px;
+          background: #ffffff;
         }
 
         .avatar-wrapper {
@@ -199,7 +200,7 @@ Error generating stack: `+s.message+`
           margin: 0 auto 20px;
           border-radius: 32px;
           overflow: hidden;
-          background: var(--bg-secondary);
+          background: #f1f5f9;
           border: 1px solid var(--glass-border);
         }
 
@@ -217,8 +218,8 @@ Error generating stack: `+s.message+`
           height: 14px;
           background: var(--success-color);
           border-radius: 50%;
-          border: 2px solid var(--bg-secondary);
-          box-shadow: 0 0 10px var(--success-color);
+          border: 2px solid #ffffff;
+          box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
         }
 
         .profile-info {
@@ -228,9 +229,7 @@ Error generating stack: `+s.message+`
         .profile-name {
           font-size: 1.6rem;
           margin-bottom: 12px;
-          background: linear-gradient(to right, #fff, #a0a0a0);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: #0f172a;
         }
 
         .profile-badge-container {
@@ -247,12 +246,12 @@ Error generating stack: `+s.message+`
           border-radius: 8px;
           font-size: 0.7rem;
           font-weight: 600;
-          border: 1px solid rgba(99, 102, 241, 0.2);
+          border: 1px solid rgba(99, 102, 241, 0.1);
         }
 
         .separator {
           height: 1px;
-          background: var(--glass-border);
+          background: #f1f5f9;
           width: 100%;
         }
 
@@ -271,25 +270,25 @@ Error generating stack: `+s.message+`
         .contact-icon {
           width: 36px;
           height: 36px;
-          background: var(--bg-secondary);
+          background: #f8fafc;
           border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
           color: var(--accent-color);
-          border: 1px solid var(--glass-border);
+          border: 1px solid #f1f5f9;
         }
 
         .contact-label {
           font-size: 0.65rem;
-          color: var(--text-secondary);
+          color: #64748b;
           text-transform: uppercase;
           letter-spacing: 0.05em;
         }
 
         .contact-value {
           font-size: 0.85rem;
-          color: var(--text-primary);
+          color: #1e293b;
         }
 
         .active-text {
@@ -316,13 +315,13 @@ Error generating stack: `+s.message+`
         }
 
         .copy-btn {
-          background: var(--bg-secondary);
-          color: var(--text-primary);
-          border: 1px solid var(--glass-border);
+          background: #f8fafc;
+          color: #1e293b;
+          border: 1px solid #f1f5f9;
         }
 
         .copy-btn:hover {
-          background: rgba(255, 255, 255, 0.05);
+          background: #f1f5f9;
         }
 
         .download-btn {
@@ -334,6 +333,7 @@ Error generating stack: `+s.message+`
         .download-btn:hover {
           background: #4f46e5;
           transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
         }
 
         .social-links {
@@ -346,17 +346,18 @@ Error generating stack: `+s.message+`
           width: 40px;
           height: 40px;
           border-radius: 12px;
-          background: var(--bg-secondary);
+          background: #f8fafc;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--text-secondary);
-          border: 1px solid var(--glass-border);
+          color: #64748b;
+          border: 1px solid #f1f5f9;
         }
 
         .social-icon:hover {
           color: var(--accent-color);
           border-color: var(--accent-color);
+          background: #ffffff;
           transform: scale(1.1);
         }
 
@@ -383,9 +384,10 @@ Error generating stack: `+s.message+`
           padding: 8px;
           gap: 4px;
           border-radius: 16px;
-          background: rgba(15, 15, 15, 0.6);
+          background: rgba(255, 255, 255, 0.8);
           backdrop-filter: blur(20px);
           border: 1px solid var(--glass-border);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
 
         .nav-tab {
@@ -393,18 +395,18 @@ Error generating stack: `+s.message+`
           border-radius: 12px;
           font-size: 0.9rem;
           font-weight: 500;
-          color: var(--text-secondary);
+          color: #64748b;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .nav-tab:hover {
-          color: var(--text-primary);
+          color: #0f172a;
         }
 
         .nav-tab.active {
           color: var(--accent-color);
           background: rgba(99, 102, 241, 0.1);
-          box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.2);
+          font-weight: 600;
         }
 
         @media (max-width: 1024px) {
@@ -810,7 +812,7 @@ Error generating stack: `+s.message+`
 
         .blog-card-premium:hover {
           border-color: var(--accent-color);
-          background: rgba(255, 255, 255, 0.02);
+          background: rgba(0, 0, 0, 0.01);
         }
 
         .blog-meta-v2 {
@@ -871,6 +873,7 @@ Error generating stack: `+s.message+`
           color: var(--accent-color);
           gap: 10px;
         }
+
       `}})]})},oS=()=>g.jsxs(It.div,{initial:{opacity:0,y:10},animate:{opacity:1,y:0},transition:{duration:.5},children:[g.jsxs("header",{className:"page-header",children:[g.jsx("h2",{className:"page-title",children:"Contact"}),g.jsx("div",{className:"title-bar"})]}),g.jsxs("div",{className:"contact-grid-v2",children:[g.jsxs("div",{className:"contact-info-column",children:[g.jsx("h3",{className:"section-subtitle",children:"Let's Connect"}),g.jsx("p",{className:"contact-intro",children:"Have a project in mind or just want to talk about backend architecture? Feel free to reach out. I'm always open to discussing new opportunities."}),g.jsxs("div",{className:"contact-methods-v2",children:[g.jsxs("div",{className:"method-card-v2 glass-card",children:[g.jsx("div",{className:"method-icon-v2",children:g.jsx(Dm,{size:20})}),g.jsxs("div",{className:"method-info-v2",children:[g.jsx("p",{children:"Email"}),g.jsx("a",{href:"mailto:iamsurajpatidar@email.com",children:"iamsurajpatidar@email.com"})]})]}),g.jsxs("div",{className:"method-card-v2 glass-card",children:[g.jsx("div",{className:"method-icon-v2",children:g.jsx(Nm,{size:20})}),g.jsxs("div",{className:"method-info-v2",children:[g.jsx("p",{children:"LinkedIn"}),g.jsx("a",{href:"https://in.linkedin.com/in/surajpatidar",target:"_blank",children:"surajpatidar"})]})]})]})]}),g.jsx("div",{className:"contact-form-column glass-card",children:g.jsxs("form",{className:"premium-form",children:[g.jsxs("div",{className:"input-group",children:[g.jsx("label",{children:"Full Name"}),g.jsx("input",{type:"text",placeholder:"John Doe"})]}),g.jsxs("div",{className:"input-group",children:[g.jsx("label",{children:"Email Address"}),g.jsx("input",{type:"email",placeholder:"john@example.com"})]}),g.jsxs("div",{className:"input-group",children:[g.jsx("label",{children:"Your Message"}),g.jsx("textarea",{placeholder:"How can I help you?"})]}),g.jsxs("button",{type:"submit",className:"form-submit-btn",children:[g.jsx(Yw,{size:18}),"Send Message"]})]})})]}),g.jsx("style",{dangerouslySetInnerHTML:{__html:`
         .contact-grid-v2 {
           display: grid;
@@ -950,7 +953,7 @@ Error generating stack: `+s.message+`
         }
 
         .input-group input, .input-group textarea {
-          background: rgba(255, 255, 255, 0.03);
+          background: #ffffff;
           border: 1px solid var(--glass-border);
           border-radius: 12px;
           padding: 14px;
@@ -962,7 +965,7 @@ Error generating stack: `+s.message+`
 
         .input-group input:focus, .input-group textarea:focus {
           border-color: var(--accent-color);
-          background: rgba(255, 255, 255, 0.05);
+          background: #ffffff;
         }
 
         .input-group textarea {
@@ -1005,6 +1008,7 @@ Error generating stack: `+s.message+`
           justify-content: center;
           position: relative;
           overflow-x: hidden;
+          background: #f1f5f9;
         }
 
         .glow-container {
@@ -1015,7 +1019,7 @@ Error generating stack: `+s.message+`
           height: 100%;
           z-index: -1;
           filter: blur(100px);
-          opacity: 0.5;
+          opacity: 0.4;
         }
 
         .glow-ball {
@@ -1025,19 +1029,19 @@ Error generating stack: `+s.message+`
         }
 
         .ball-1 {
-          width: 400px;
-          height: 400px;
-          top: -100px;
+          width: 500px;
+          height: 500px;
+          top: -150px;
           right: -100px;
-          background: var(--accent-glow);
+          background: rgba(99, 102, 241, 0.1);
         }
 
         .ball-2 {
-          width: 300px;
-          height: 300px;
-          bottom: -50px;
+          width: 400px;
+          height: 400px;
+          bottom: -100px;
           left: -50px;
-          background: rgba(6, 182, 212, 0.15); /* Cyan glow */
+          background: rgba(6, 182, 212, 0.08); 
         }
 
         .main-layout {
@@ -1060,6 +1064,7 @@ Error generating stack: `+s.message+`
           flex: 1;
           border-radius: 32px;
           min-height: 700px;
+          background: rgba(255, 255, 255, 0.7);
         }
 
         @media (max-width: 1024px) {
@@ -1071,7 +1076,7 @@ Error generating stack: `+s.message+`
           }
           .content-wrapper {
             padding: 24px;
-            margin-bottom: 80px; /* Space for mobile nav */
+            margin-bottom: 80px; 
             min-height: auto;
           }
         }
