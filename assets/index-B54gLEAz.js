@@ -973,12 +973,32 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
           gap: 16px;
           border-bottom: 1px solid var(--border-color);
           padding-bottom: 32px;
+          margin-bottom: 32px;
+        }
+
+        .blog-meta-v3 {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .blog-tag-v2, .blog-time-v2 {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: var(--accent-color);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
         }
 
         .blog-detail-title {
-          font-size: 2.5rem;
+          font-size: 2rem;
           line-height: 1.2;
           font-weight: 800;
+          color: var(--text-primary);
         }
 
         .blog-detail-date {
@@ -1019,6 +1039,12 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
 
         .blog-detail-content li {
           margin-bottom: 8px;
+        }
+
+        @media (min-width: 1024px) {
+          .blog-detail-title {
+            font-size: 2.8rem;
+          }
         }
 
         @media (max-width: 768px) {
